@@ -1,0 +1,22 @@
+[theme]
+# Clinical color palette — calm, desaturated, no alarm hues.
+# Primary action color is medical blue (matches Epic/Cerner conventions).
+primaryColor = "#1565C0"
+
+# Page background: very light clinical blue (hospital ambient color)
+backgroundColor = "#EFF6FB"
+
+# Sidebar / secondary surfaces: slightly deeper blue-gray for hierarchy
+secondaryBackgroundColor = "#E2ECF5"
+
+# Body text: dark slate (high AA contrast on white)
+textColor = "#0F172A"
+
+# System font stack — renders natively on macOS, Windows, Linux
+font = "sans serif"
+
+[ui]
+hideTopBar = false
+
+[client]
+toolbarMode = "minimal"

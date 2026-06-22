@@ -1,0 +1,68 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+streamlit_app/.venv/
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- OS / editor cruft ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- Large local artefacts (regeneratable) ---
+# MedCPT pre-trained encoders (download from HuggingFace via setup_local_pipeline.py)
+models/MedCPT-Query-Encoder/
+models/MedCPT-Article-Encoder/
+models/MedCPT-Cross-Encoder/
+
+# FAISS indices (rebuild via setup_local_pipeline.py)
+patient_index/patient_index.bin
+medlineplus_index/medlineplus_index.bin
+
+# PrimeKG pickle (50 MB, source from Harvard)
+primekg_index.pkl
+
+# Streamlit secrets (none currently, but just in case)
+.streamlit/secrets.toml
+
+# --- Logs / temp ---
+*.log
+nohup.out
+.cache/
+
+# --- Added by fix_repo_size.sh — large local artefacts ---
+models/
+patient_index/
+medlineplus_index/
+streamlit_app/.venv/
+**/.venv/
+**/__pycache__/
+*.bin
+*.pt
+*.pkl
+*.faiss
+*.npz
+*.npy
+*.safetensors
+*.gguf
+*.ggml
+*.h5
+*.onnx
+
+# --- Force-include trained router artefacts (small) ---
+!patient_router/
+!patient_router/*.pt
+!patient_router/*.pkl

@@ -1,0 +1,20 @@
+# Core dependencies — works on Python 3.10 / 3.11 (recommended)
+# scispaCy/spaCy require numpy<2 and don't have wheels for Python 3.13
+streamlit>=1.30
+numpy<2
+torch>=2.0
+transformers>=4.30
+faiss-cpu>=1.7
+requests
+
+# KG entity extraction from question text (extracts drug/food names)
+thinc<8.4
+spacy<3.8
+scispacy
+
+# After installing the above, run:
+#   pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz
+#
+# On Python 3.13: remove scispaCy/spaCy/thinc lines above and bump numpy>=1.26.
+# The app still runs; KG lookup falls back to using only the patient's
+# prescribed drug names.
