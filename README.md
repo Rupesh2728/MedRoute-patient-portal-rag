@@ -4,8 +4,6 @@
 learns when to retrieve external evidence and when to rely on a large
 language model's internal knowledge.
 
-CSE 676A · Deep Learning · Spring 2026 · University at Buffalo
-
 ---
 
 ## What this is
