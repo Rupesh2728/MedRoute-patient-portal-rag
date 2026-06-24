@@ -1,6 +1,6 @@
-# patient-portal-rag
+# MedRoute
 
-**MedRoute** — a local, context-aware clinical decision-support system that
+A local, context-aware clinical decision-support system that
 learns when to retrieve external evidence and when to rely on a large
 language model's internal knowledge.
 
@@ -88,6 +88,8 @@ pre-computed answers — no GPU or Ollama needed.
    from PrimeKG — Harvard precision-medicine knowledge graph).
 4. **Toggle "Live mode" in the streamlit sidebar.**
 
+
+
 ## Headline results
 
 | Strategy | Accuracy (n=2000, strict rubric) | Compute |
@@ -100,10 +102,15 @@ pre-computed answers — no GPU or Ollama needed.
 
 Mode 3 recall = 99%: zero safety-critical questions misrouted to LLM-only.
 
+## Architecture
+
+![MedRoute System Architecture](poster_charts/flowchart_architecture.png)
+
 ## Authors
 
-Ishaq Miyawala · Maqsood Ahmed · Rupesh Chowdary
-University at Buffalo
+ -  Maqsood Ahmed
+ -  Rupesh Chowdary
+ -  Ishaq Miyawala
 
 ## License
 
